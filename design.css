@@ -1,0 +1,458 @@
+/* GRADIENTE DO FUNDO -------------------------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    /*background: linear-gradient(-45deg, #FC007A, #a70e90, #4682b4, #00E5FF);*/
+    background: linear-gradient(-45deg,#a0d9e7 0, #a3d8eb 5.56%, #a6d7ee 11.11%, #aad6f1 16.67%, #afd5f2 22.22%, #b4d3f4 27.78%, #bad2f4 33.33%, #c0d0f4 38.89%, #c7cff3 44.44%, #cdcdf2 50%, #d3cbf0 55.56%, #d9caed 61.11%, #dfc8ea 66.67%, #e4c7e6 72.22%, #e9c6e2 77.78%, #edc5dd 83.33%, #f1c4d9 88.89%, #f3c3d4 94.44%, #f5c3cf 100%);
+    background-size: 175% 175%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }    
+}
+
+/* CONFIGURAÇÃO DO HEADER -------------------------------------------------------------------- */
+div.header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    left: 0;
+    font-family: arial;
+    z-index: 9;
+    padding-top: 7px;
+    
+    font-size: 20px;
+    font-style: bold;
+}
+
+a.a_header:link, a.a_header:visited {
+    text-decoration: none;
+    color: #661c99;
+    font-size: 20px;
+    font-style: bold;
+}
+
+a.a_header:hover {
+    text-decoration: none;
+    color: #fc81b2;
+    font-size: 20px;
+    font-style:bold;
+}
+
+div.logo {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 20%
+    padding: 5px;
+    padding-right: 50px;
+}
+
+#header_logo {
+    height: 70px;
+    opacity: 1;
+}
+
+#header_logo:hover {
+    opacity: 0.7;
+}
+
+div.links {
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    width: 30%;
+}
+
+div.busca{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 30%;
+    border:solid 1.5px;
+    border-color: #c994d6;
+    border-radius:15px;
+    width:220px;
+    padding-bottom:3px;
+    margin: 12px;
+}
+
+div.header_carrinho {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 6%;
+}
+
+#txtbusca{
+    padding-left:5px;
+    font-family: arial;
+    font-style:italic;
+    font-size:12px;
+    border:none;
+    height:25px;
+    width:160px;
+}
+
+#btnbusca {
+    margin-top: 2px;
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+}
+
+#img_carrinho {
+    width: 25px;
+    height: auto;
+}
+
+
+/* CONFIGURAÇÃO GERAL -------------------------------------------------------------------- */
+
+div.div_principal {
+    background-color: red;
+    width: 1200px;
+    height: auto;
+    font-family: arial;
+    align-content: center;
+}
+
+h4 {
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+hr {
+    color: #45106A;
+    border-color: #45106A;
+    outline-color: #45106A;
+}
+
+h1 {
+    color: #661c99;
+    font-size: 20px;
+    font-style: bold;
+}
+
+img {
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+}
+
+
+/* CADASTRO -------------------------------------------------------------------- */
+
+
+#cadastro {
+    width:100%;
+    background-color: transparent;
+    position: absolute;
+    align-content: center;
+    height: 250px;
+    font-family: arial;
+    text-align: justify;
+    font-size: 20px;
+    color: #300b59;
+    top:50%;
+    margin-top: -200px;
+    line-height: 30px;
+}
+
+input.btn{
+    height: 30px;
+    width: 110px;
+    color:#300b59;
+    border: 2px solid #8b78ad;
+    background-color:transparent;
+}
+
+#meio
+{
+    position: relative;
+    background-color: transparent;
+    width: 300px;
+    height: auto;
+    font-family: arial;
+    align-content: center;
+}
+
+/* PÁGINA "HOME" -------------------------------------------------------------------- */
+
+#img_principal {
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    
+}
+
+#txt_principal {
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    background-color: transparent;
+    
+    font-family: arial;
+    text-align: justify;
+    font-size: 20px;
+    color: #300b59;
+    
+    line-height: 30px;
+}
+
+div.img_sec {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    
+}
+
+div.txt_sec {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+        
+    font-family: arial;
+    text-align: justify;
+    font-size: 15px;
+/*    color: #2b0d3d;*/
+    color: #300b59;
+}
+
+.prod_btn, .prod_btn:link, .prod_btn:visited {
+    font: arial;
+    text-decoration: none;
+    color: #5C1B89;
+    border: 2px solid #5C1B89;
+    transition: all 300ms;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.prod_btn:hover {
+    background-color: #5C1B89;
+    color: white;
+}
+
+#video {
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-top: 30px;
+}
+
+#txt_video {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    background-color: transparent;
+    padding-right: 30px;
+    
+    font-family: arial;
+    text-align: justify;
+    font-size: 20px;
+    color: #300b59;
+    
+    line-height: 30px;
+}
+
+
+/* FOOTER -------------------------------------------------------------------- */
+
+div.footer {
+    background-color: white;
+    height: auto;
+    font-family: arial;
+    align-content: center;
+    
+    color: black;
+    font-size: 14px;
+}
+
+/* PRODUTOS -------------------------------------------------------------------- */
+
+a.nomes_produtos{
+    color: #300b59;
+}
+
+/* CARRINHO DE COMPRAS -------------------------------------------------------------------- */
+th.h_car {
+    background-color: #a793c2;
+    color: #300b59;
+}
+
+th {
+    color: #300b59;
+}
+
+/* PÁGINA DE LOGIN -------------------------------------------------------------------- */
+
+div.login {
+    padding: 30px;
+    vertical-align: middle;
+}
+
+a.cadastro:link, a.cadastro:visited {
+    color: #300b59;
+}
+
+a.cadastro:hover {
+    color: #fc81b2;
+}
+
+/* FORMULÁRIOS -------------------------------------------------------------------- */
+
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], input[type="number"] {
+    background-color: transparent;
+    border-color: #835d9c;
+    border-radius: 4px;
+    outline: none;
+    
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    color: #300b59;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    background-color: #b2a9db;
+}
+
+.btn:hover {
+    border-color: white;
+    color: white;
+} 
+
+.form_box {
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    background-color: transparent;
+    border-color: #835d9c;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 15px;
+    color: #300b59;
+}
+
+/* PÁGINA DEVS -------------------------------------------------------------------- */
+
+.dev_box {
+    width: 500px;
+    height: auto;
+    padding: 7px;
+    border-color: white;
+    border-style: dotted;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.dev_foto {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+    border: solid white 3px;
+}
+
+.dev {
+    width: 280px;
+    text-align: justify;
+    position: relative;
+    display: inline-block;
+/*    color: #300b59;*/
+}
+
+/* FINALIZAR COMPRA -------------------------------------------------------------------- */
+
+.btn_comprafinal{
+    background: linear-gradient(-45deg,#a0d9e7 0, #a3d8eb 5.56%, #a6d7ee 11.11%, #aad6f1 16.67%, #afd5f2 22.22%, #b4d3f4 27.78%, #bad2f4 33.33%, #c0d0f4 38.89%, #c7cff3 44.44%, #cdcdf2 50%, #d3cbf0 55.56%, #d9caed 61.11%, #dfc8ea 66.67%, #e4c7e6 72.22%, #e9c6e2 77.78%, #edc5dd 83.33%, #f1c4d9 88.89%, #f3c3d4 94.44%, #f5c3cf 100%);
+    font: arial;
+    font-size: 15px;
+    padding: 7px;
+    color: #300b59;
+}
+
+a.btn_finalcompra, a.btn_finalcompra:link, a.btn_finalcompra:visited {
+    font: arial;
+    text-decoration: none;
+    color: #661c99;
+    border: 2px solid #8b78ad;
+    padding: 5px;
+    font-size: 12px;
+}
+
+a.btn_finalcompra:hover{
+   text-decoration: none;
+    font: arial;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    font-size: 12px; 
+}
+
+/* ADMIN-------------------------------------------------------------------------*/
+.btn_admin{
+     font: arial;
+    text-decoration: none;
+    color: #5C1B89;
+    border: 2px solid #5C1B89;
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    width: 200px;
+    transition: all 300ms;
+    border-radius: 4px;
+} 
+.btn_admin:hover{
+    background-color: #5C1B89;
+    color: white;
+}
+.bylink{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+.usuario{
+    font-size: 19px;
+    color: #45106A;
+}
+
+
+
